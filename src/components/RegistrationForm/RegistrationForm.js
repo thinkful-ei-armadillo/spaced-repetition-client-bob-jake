@@ -41,9 +41,10 @@ class RegistrationForm extends Component {
     const { error } = this.state
     return (
       <form
+        className = 'registration-form'
         onSubmit={this.handleSubmit}
       >
-        <div role='alert'>
+        <div role='alert' className = 'error'>
           {error && <p>{error}</p>}
         </div>
         <div>
@@ -54,6 +55,7 @@ class RegistrationForm extends Component {
             ref={this.firstInput}
             id='registration-name-input'
             name='name'
+            placeholder='Barry Blue Jeans'
             required
           />
         </div>
@@ -64,6 +66,7 @@ class RegistrationForm extends Component {
           <Input
             id='registration-username-input'
             name='username'
+            placeholder='gunsandbros69'
             required
           />
         </div>
@@ -75,12 +78,13 @@ class RegistrationForm extends Component {
             id='registration-password-input'
             name='password'
             type='password'
+            placeholder='P@ssw0rd'
             required
           />
         </div>
-        <footer>
+        <footer className = 'registration-footer' >
           <Button type='submit'>
-            Sign up
+            <span>Sign up</span>
           </Button>
           {' '}
           <Link to='/login'>Already have an account?</Link>

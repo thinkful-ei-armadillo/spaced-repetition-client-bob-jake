@@ -32,7 +32,7 @@ class Header extends Component {
     return (
       <nav>
         <Link to='/login'>Login</Link>
-        {' '}
+        <span />
         <Link to='/register'>Sign up</Link>
       </nav>
     )
@@ -41,14 +41,12 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <h1>
-          <Link to='/'>
-            Spaced repetition
-          </Link>
-        </h1>
         {TokenService.hasAuthToken()
           ? this.renderLogoutLink()
           : this.renderLoginLink()}
+
+        <h1 className='logo'><Link to='/'>Viva Mexico</Link></h1>
+
       </header>
     );
   }
