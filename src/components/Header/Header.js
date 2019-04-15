@@ -45,7 +45,7 @@ class Header extends Component {
           ? this.renderLogoutLink()
           : this.renderLoginLink()}
 
-        <h1 className='logo'><Link to='/'>Viva Mexico</Link></h1>
+        <h1 className='logo'><Link to='/'>¡Viva Mexico!</Link></h1>
 
       </header>
     );
