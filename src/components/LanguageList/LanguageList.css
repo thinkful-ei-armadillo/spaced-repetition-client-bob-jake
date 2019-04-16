@@ -1,0 +1,66 @@
+.langContainer{
+  
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+ul{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+.word{
+  
+  width: 33%;
+  text-align: left;
+  
+}
+.incorrect{
+  
+  width: 33%;
+  text-align: left;
+  color: red;
+  
+}
+.correct{
+  
+  width: 33%;
+  text-align: left;
+  color: green;
+}
+
+li{
+  list-style-type: none;
+  
+  display: inline-flex;
+  width: 90%;
+  justify-content: space-around;
+  margin-bottom: 10px;
+
+}
+
+li h4{
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+}
+
+li span{
+  margin-right: 10%;
+}
+
+.total{
+margin: 10px;
+}
+
+.start-practicing{
+  width:30%;
+  margin-top: 15px;
+  background-color: #43d0957d;
+  box-shadow: 2px 2px 4px 0px;
+  border:none;
+  border-radius: 4px;
+  height:25px;
+  font-size: 1.2em;
+}

@@ -5,10 +5,14 @@ import IdleService from '../services/idle-service'
 
 const UserContext = React.createContext({
   user: {},
+  language: null,
+  words: [],
   error: null,
   setError: () => {},
   clearError: () => {},
   setUser: () => {},
+  setWords: () => {},
+  setLang: () => {},
   processLogin: () => {},
   processLogout: () => {},
 })
@@ -54,6 +58,14 @@ export class UserProvider extends Component {
 
   clearError = () => {
     this.setState({ error: null })
+  }
+
+  setLang = language => {
+    this.setState({ language })
+  }
+
+  setWords = words => {
+    this.setState({ words })
   }
 
   setUser = user => {
@@ -105,11 +117,16 @@ export class UserProvider extends Component {
     const value = {
       user: this.state.user,
       error: this.state.error,
+      language: this.state.language,
+      words: this.state.words,
       setError: this.setError,
       clearError: this.clearError,
       setUser: this.setUser,
+      setLang: this.setLang,
+      setWords: this.setWords,
       processLogin: this.processLogin,
       processLogout: this.processLogout,
+
     }
     return (
       <UserContext.Provider value={value}>

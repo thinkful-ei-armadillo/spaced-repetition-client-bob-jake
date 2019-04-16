@@ -46,3 +46,9 @@ nav a {
 header h1 {
   margin:0;
 }
+
+#welcomeUser{
+  text-align: left;
+  width: 90%;
+  color: white;
+}

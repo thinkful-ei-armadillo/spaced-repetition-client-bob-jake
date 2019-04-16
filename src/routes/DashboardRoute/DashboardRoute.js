@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import LanguageList from '../../components/LanguageList/LanguageList';
 
 class DashboardRoute extends Component {
   render() {
     return (
       <section>
-        implement and style me
+        <LanguageList />
       </section>
     );
   }
