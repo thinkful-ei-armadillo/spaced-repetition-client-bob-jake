@@ -1,5 +1,8 @@
 .langContainer{
-  
+  background: linear-gradient(90deg, rgba(209, 22, 2, 0.35) 0%, rgba(252, 252, 252, .35) 36%,rgba(252, 252, 252, .35) 62%, rgba(2, 94, 23, .35) 100%);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0px 10px 1px #000000de;
   margin: 0 auto;
   width: 60%;
   text-align: center;

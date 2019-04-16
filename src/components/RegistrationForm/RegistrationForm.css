@@ -6,7 +6,8 @@
     width: 40%;
     padding-bottom: 10px;
     background: linear-gradient(90deg, rgba(209,22,2,1) 0%, rgba(252,252,252,1) 36%,rgba(252,252,252,1) 62%, rgba(2,94,23,1) 100%);
-}
+    box-shadow: 0 0 10px 1px #1b1b1bbf;
+  }
 
 .registration-form > div {
   margin: 20px;

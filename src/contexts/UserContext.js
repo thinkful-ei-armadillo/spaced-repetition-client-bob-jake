@@ -7,11 +7,13 @@ const UserContext = React.createContext({
   user: {},
   language: null,
   words: [],
+  currentWord: null,
   error: null,
   setError: () => {},
   clearError: () => {},
   setUser: () => {},
   setWords: () => {},
+  setCurrent: () => {},
   setLang: () => {},
   processLogin: () => {},
   processLogout: () => {},
@@ -68,6 +70,10 @@ export class UserProvider extends Component {
     this.setState({ words })
   }
 
+  setCurrent = currentWord => {
+    this.setState({ currentWord })
+  }
+
   setUser = user => {
     this.setState({ user })
   }
@@ -119,11 +125,13 @@ export class UserProvider extends Component {
       error: this.state.error,
       language: this.state.language,
       words: this.state.words,
+      currentWord: this.state.currentWord,
       setError: this.setError,
       clearError: this.clearError,
       setUser: this.setUser,
       setLang: this.setLang,
       setWords: this.setWords,
+      setCurrent: this.setCurrent,
       processLogin: this.processLogin,
       processLogout: this.processLogout,
 
