@@ -34,6 +34,7 @@ nav {
   margin:auto;
   padding:10px;
   border-bottom: 3px solid black;
+  box-shadow: 0 2px 10px #1b1b1bbf;
 }
 
 nav a {
