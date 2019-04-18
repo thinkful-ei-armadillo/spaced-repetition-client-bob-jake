@@ -7,10 +7,16 @@ const UserContext = React.createContext({
   user: {},
   language: null,
   words: [],
+  totalScore: 0,
   currentWord: null,
   error: null,
+  guess: null,
+  userInput: null,
   setError: () => {},
   clearError: () => {},
+  setUserInput: () => {},
+  setTotalScore: () => {},
+  setGuess: () => {},
   setUser: () => {},
   setWords: () => {},
   setCurrent: () => {},
@@ -62,8 +68,15 @@ export class UserProvider extends Component {
     this.setState({ error: null })
   }
 
+  setGuess = guess => {
+    this.setState({ guess })
+  }
+
   setLang = language => {
     this.setState({ language })
+  }
+  setTotalScore = totalScore => {
+    this.setState({ totalScore })
   }
 
   setWords = words => {
@@ -76,6 +89,10 @@ export class UserProvider extends Component {
 
   setUser = user => {
     this.setState({ user })
+  }
+
+  setUserInput = userInput => {
+    this.setState({ userInput })
   }
 
   processLogin = authToken => {
@@ -126,11 +143,17 @@ export class UserProvider extends Component {
       language: this.state.language,
       words: this.state.words,
       currentWord: this.state.currentWord,
+      guess: this.state.guess,
+      userInput: this.state.userInput,
+      totalScore: this.state.totalScore,
+      setTotalScore: this.setTotalScore,
       setError: this.setError,
       clearError: this.clearError,
       setUser: this.setUser,
       setLang: this.setLang,
       setWords: this.setWords,
+      setGuess: this.setGuess,
+      setUserInput: this.setUserInput,
       setCurrent: this.setCurrent,
       processLogin: this.processLogin,
       processLogout: this.processLogout,
