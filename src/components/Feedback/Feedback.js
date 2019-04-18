@@ -30,6 +30,7 @@ class Feedback extends Component {
 
   handleButton = () => {
     this.context.setTotalScore(this.context.guess.totalScore)
+    this.context.setNextWord(this.context.guess.nextWord)
     this.context.setGuess(null)
   }
 

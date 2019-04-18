@@ -41,9 +41,10 @@ class Header extends Component {
           ? this.renderLogoutLink()
           : this.renderLoginLink()}
 
-        <h1 className="logo">
+        <h2 className="viva">
           <Link to="/">¡Viva Mexico!</Link>
-        </h1>
+        </h2>
+        <h1 className="logo">Spaced repetition</h1>
       </header>
     );
   }

@@ -7,7 +7,8 @@ const UserContext = React.createContext({
   user: {},
   language: null,
   words: [],
-  totalScore: 0,
+  totalScore: null,
+  nextWord: null,
   currentWord: null,
   error: null,
   guess: null,
@@ -19,6 +20,7 @@ const UserContext = React.createContext({
   setGuess: () => {},
   setUser: () => {},
   setWords: () => {},
+  setNextWord: () => {},
   setCurrent: () => {},
   setLang: () => {},
   processLogin: () => {},
@@ -86,6 +88,9 @@ export class UserProvider extends Component {
   setCurrent = currentWord => {
     this.setState({ currentWord })
   }
+  setNextWord = nextWord => {
+    this.setState({ nextWord })
+  }
 
   setUser = user => {
     this.setState({ user })
@@ -142,6 +147,7 @@ export class UserProvider extends Component {
       error: this.state.error,
       language: this.state.language,
       words: this.state.words,
+      nextWord: this.state.nextWord,
       currentWord: this.state.currentWord,
       guess: this.state.guess,
       userInput: this.state.userInput,
@@ -152,6 +158,7 @@ export class UserProvider extends Component {
       setUser: this.setUser,
       setLang: this.setLang,
       setWords: this.setWords,
+      setNextWord: this.setNextWord,
       setGuess: this.setGuess,
       setUserInput: this.setUserInput,
       setCurrent: this.setCurrent,

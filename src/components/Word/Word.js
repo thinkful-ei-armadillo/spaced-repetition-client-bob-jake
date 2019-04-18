@@ -33,9 +33,11 @@ class Word extends Component {
         </h2>
         
         <span>
-          {(this.context.currentWord) ?
+          {(this.context.nextWord) ?
+            this.context.nextWord : (this.context.currentWord) ?
             this.context.currentWord.nextWord :
-            'loading'}
+            'loading'
+            }
         </span>
         <main>
           <form className='main-form' name='main-form' onSubmit={e => this.handleSubmit(e)}>
@@ -46,7 +48,12 @@ class Word extends Component {
 
 
           <p>
-            Your total score is: {this.context.totalScore}
+            Your total score is: {
+              (this.context.totalScore) ? 
+              this.context.totalScore : 
+              (this.context.currentWord) ? 
+              this.context.currentWord.totalScore : 
+              'loading'}
           </p>
           <p>You have answered this word correctly {correctCount} times.</p>
           <p>You have answered this word incorrectly {incorrectCount} times.</p>
