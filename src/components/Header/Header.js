@@ -34,6 +34,13 @@ class Header extends Component {
     );
   }
 
+  handleClearGuess=()=>{
+    if(this.context.guess){
+      this.context.setGuess(null)
+    }
+    return;
+  }
+
   render() {
     return (
       <header>
@@ -42,7 +49,7 @@ class Header extends Component {
           : this.renderLoginLink()}
 
         <h2 className="viva">
-          <Link to="/">¡Viva Mexico!</Link>
+          <Link to="/" onClick={this.handleClearGuess}>¡Viva Mexico!</Link>
         </h2>
         <h1 className="logo">Spaced repetition</h1>
       </header>

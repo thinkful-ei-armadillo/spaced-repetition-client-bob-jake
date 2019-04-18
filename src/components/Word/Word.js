@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import UserContext from '../../contexts/UserContext'
 import ApiService from '../../services/api-services'
+import './Word.css'
 
 class Word extends Component {
   static contextType = UserContext
@@ -27,12 +28,12 @@ class Word extends Component {
     const incorrectCount = (this.context.currentWord) ? this.context.currentWord.wordIncorrectCount : '-1';
 
     return (
-      <section>
+      <section className='wordContainer'>
         <h2>
           Translate the word:
         </h2>
         
-        <span>
+        <span id='translateWord'>
           {(this.context.nextWord) ?
             this.context.nextWord : (this.context.currentWord) ?
             this.context.currentWord.nextWord :

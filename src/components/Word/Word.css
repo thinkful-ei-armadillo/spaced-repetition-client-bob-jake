@@ -1,8 +1,8 @@
-.LoginForm {
+.wordContainer{
   text-align: center;
   margin: auto;
-  border-radius: 10px;
   padding:10px;
+  border-radius: 10px;
   width: 40%;
   padding: 25px;
   background: linear-gradient(90deg, rgba(209, 22, 2, 0.35) 0%, rgba(252, 252, 252, .35) 50%, rgba(2, 94, 23, .35) 100%);
@@ -10,24 +10,26 @@
   margin-top: 10px;
 }
 
-.LoginForm > div {
-margin: 20px;
+.wordContainer h2{
+  margin-bottom: 10px;
 }
 
-.LoginForm input {
-display: block;
-margin:auto;
-margin-top: 10px;
-width: 200px;
-border: none;
-height: 25px;
-font-size: 15px;
-padding: 4px;
-border-radius: 2px;
+#translateWord{
+  font-size: 250%;
+  font-weight: bolder;
 }
 
+.main-form{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
 
-.LoginForm button {
+#learn-guess-input{
+  margin-top: 6%;
+}
+
+.main-form button {
   
   -webkit-transition: all 1000ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   -moz-transition: all 1000ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
@@ -38,8 +40,8 @@ border-radius: 2px;
   border:none;
   margin: 20px auto;
   width: 200px;
-  height: 50px;
   border-radius: 4px;
+  height: 50px;
   color: black;
   box-shadow:rgba(0, 0, 0, 0.459) 0 0px 0px 2px inset;
   background: none;
@@ -52,10 +54,20 @@ a button{
 text-decoration: none;
 }
 
-.LoginForm button:hover{
+.main-form button:hover{
 color: rgba(255, 255, 255, 0.85);
 box-shadow: rgba(0, 0, 0, 0.459) 0 0px 0px 40px inset;
 cursor: pointer;
 
 }
 
+.main-form input{
+margin:auto;
+margin-top: 10px;
+width: 200px;
+border: none;
+height: 25px;
+font-size: 15px;
+padding: 4px;
+border-radius: 2px;
+}

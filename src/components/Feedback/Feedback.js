@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import UserContext from '../../contexts/UserContext';
+import'./Feedback.css'
 
 class Feedback extends Component {
   static contextType = UserContext
@@ -38,7 +39,7 @@ class Feedback extends Component {
     
     console.log(this.context)
     return ( 
-    <div>
+    <div className='feedbackContainer'>
       {this.handlePageView()}
       <button onClick={this.handleButton}>Try another word!</button>
     </div>
