@@ -10,15 +10,17 @@
 }
 
 ul{
-  width: 80%;
   margin: 0 auto;
   padding: 0;
 }
 .word{
-  
   width: 33%;
   text-align: left;
   
+}
+
+.Word-list {
+  width:100%;
 }
 .incorrect{
   
@@ -101,4 +103,38 @@ a .start-practicing:hover{
   box-shadow: rgba(0, 0, 0, 0.459) 0 0px 0px 40px inset;
   cursor: pointer;
 
+}
+
+@media screen and (max-width:500px) {
+  html::after {
+    min-height:160vh;
+  }
+  
+  .langContainer {
+    width:95%;
+    padding-bottom: 5px;
+    margin-bottom:10px;
+  }
+
+  ul {
+    width:100%;
+  }
+  ul li {
+    width:100%;
+    padding:5px;
+  }
+
+  li h4 {
+    margin-top:25%;
+  }
+  .start-practicing {
+    width:100%
+  }
+
+}
+
+@media screen and (max-width:320px) {
+  html::after {
+    min-height:210vh;
+  }
 }

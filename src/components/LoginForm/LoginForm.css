@@ -56,6 +56,13 @@ text-decoration: none;
 color: rgba(255, 255, 255, 0.85);
 box-shadow: rgba(0, 0, 0, 0.459) 0 0px 0px 40px inset;
 cursor: pointer;
-
 }
 
+@media screen and (max-width: 500px) {
+  .LoginForm {
+    width:80%;
+  }
+  .LoginForm input {
+    width: 100%;
+  }
+}

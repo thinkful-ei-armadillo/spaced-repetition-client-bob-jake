@@ -20,7 +20,7 @@
 }
 
 .main-form{
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   margin-top: 10px;
 }
@@ -70,4 +70,17 @@ height: 25px;
 font-size: 15px;
 padding: 4px;
 border-radius: 2px;
+}
+
+@media screen and (max-width:500px) {
+  .wordContainer {
+    width:80%;
+  }
+  .main-form button, .main-form input {
+    width:100%;
+  }
+  .main-form {
+    width:80%;
+  }
+
 }

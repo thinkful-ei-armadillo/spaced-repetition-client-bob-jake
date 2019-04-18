@@ -31,8 +31,9 @@ header {
 }
 
 nav span {
-  width:300px;
+  width:50%;
   display:inline-block;
+  
 }
 
 nav {
@@ -57,4 +58,14 @@ header h1 {
   text-align: left;
   width: 90%;
   color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .viva {
+    font-size:.9em;
+  }
+  #welcomeUser{
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+  }
 }

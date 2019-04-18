@@ -2,15 +2,19 @@ html::after {
   background-image: url('../../resources/pepper-hot-solid.svg');
   background-color:#808080;
   background-size:100px;
+  position: absolute;
   opacity: 0.1;
-  height:100vh;
+  padding:0;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  position: absolute;
   z-index: -1; 
   content: "";
+}
+
+html {
+  overflow:auto;
 }
 
 .registration-page h2 {  
@@ -20,6 +24,7 @@ html::after {
 .registration-page p {
   text-align: center;
   font-style: italic;
+  margin:5px;
 }
 
 .login-page h2 {  

@@ -62,3 +62,19 @@ box-shadow: rgba(0, 0, 0, 0.459) 0 0px 0px 40px inset;
 cursor: pointer;
 
 }
+
+@media screen and (max-width: 500px){
+  .registration-form {
+    width:80%;
+  }
+  .registration-form input {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 320px){
+  html::after {
+    min-height:120vh;
+  }
+}

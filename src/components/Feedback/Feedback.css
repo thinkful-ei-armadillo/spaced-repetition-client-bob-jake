@@ -42,3 +42,12 @@ cursor: pointer;
 
 }
 
+@media screen and (max-width: 500px) {
+  .feedbackContainer {
+    width:80%;
+  }
+  .feedbackContainer input {
+    width: 100%;
+  }
+}
+
