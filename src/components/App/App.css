@@ -18,6 +18,10 @@ html {
   overflow:auto;
 }
 
+input {
+  box-shadow:1px 1px 4px black;
+}
+
 .registration-page h2 {  
   text-align: center;
 }
