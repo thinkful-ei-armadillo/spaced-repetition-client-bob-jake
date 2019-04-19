@@ -55,7 +55,6 @@ class LanguageList extends Component {
 
 
   render() {
-    console.log(this.context.language)
     return ( 
       <div className='langContainer'>
         {this.language()}

@@ -9,10 +9,8 @@ class LearningRoute extends Component {
   render() {
     const handleRender = () =>{
       if(!this.context.guess){
-        console.log(this.context)
         return <Word />
       }
-      console.log('rendering')
       return <Feedback />
     }
     return (

@@ -8,7 +8,6 @@ class Word extends Component {
   componentDidMount() {
     ApiService.getWord()
       .then(res => {
-        console.log(res)
         this.context.setCurrent(res)
       })
   }
