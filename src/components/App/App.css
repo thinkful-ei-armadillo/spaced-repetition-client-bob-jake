@@ -3,7 +3,8 @@ html::after {
   background-image: url('../../resources/pepper-hot-solid.svg');
   background-color:#808080;
   background-size:100px;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
   opacity: 0.1;
   padding:0;
   top: 0;

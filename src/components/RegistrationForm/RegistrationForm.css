@@ -72,9 +72,3 @@ cursor: pointer;
   }
 
 }
-
-@media screen and (max-width: 320px){
-  html::after {
-    min-height:120vh;
-  }
-}

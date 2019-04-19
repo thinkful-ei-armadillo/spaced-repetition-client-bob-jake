@@ -106,9 +106,7 @@ a .start-practicing:hover{
 }
 
 @media screen and (max-width:500px) {
-  html::after {
-    min-height:160vh;
-  }
+
   
   .langContainer {
     width:95%;
@@ -131,10 +129,4 @@ a .start-practicing:hover{
     width:100%
   }
 
-}
-
-@media screen and (max-width:320px) {
-  html::after {
-    min-height:210vh;
-  }
 }
