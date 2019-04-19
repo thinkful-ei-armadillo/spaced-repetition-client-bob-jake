@@ -1,6 +1,3 @@
-* {
-  transition: all 2s;
-}
 
 html::after {
   background-image: url('../../resources/pepper-hot-solid.svg');

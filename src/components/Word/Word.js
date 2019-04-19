@@ -16,8 +16,8 @@ class Word extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    this.context.setUserInput(e.target.guess.value)
-    ApiService.postGuess(e.target.guess.value)
+    this.context.setUserInput(e.target.guess.value.toLowerCase())
+    ApiService.postGuess(e.target.guess.value.toLowerCase())
     .then(res => 
       this.context.setGuess(res))
   }
