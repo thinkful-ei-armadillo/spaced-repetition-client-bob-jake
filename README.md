@@ -5,7 +5,13 @@ This project was made for the second capstone requirement in Thinkful's engineer
 Our motivation was to change the world by teaching you ten different words in Spanish, although you probably already know most of them.
 
 ## Screenshots
-coming soon...
+![Login Page](./src/resources/login.png?raw=true "[Login Page")
+![Signup Page](./src/resources/signup.png?raw=true "[Signup Page")
+![Wordlist Page](./src/resources/wordlist.png?raw=true "[Wordlist Page")
+![Word Page](./src/resources/word.png?raw=true "[Word Page")
+![Correct Page](./src/resources/correct.png?raw=true "[Correct Page")
+![Incorrect Page](./src/resources/incorrect.png?raw=true "[Incorrect Page")
+![Hovered Button](./src/resources/hovered.png?raw=true "[Hovered Button")
 
 ## Tech Stack
 React.js, Cypress.io, Express, Node.js, PostgreSQL
